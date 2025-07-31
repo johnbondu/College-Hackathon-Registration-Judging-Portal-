@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Hackathon Registration & Judging Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+  <!-- Hero Section -->
+  <header class="py-4 md:py-6 px-4 text-center flex flex-col items-center justify-center">
+    
+    <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800 mb-2 md:mb-4 drop-shadow">Welcome to the College Hackathon Portal</h1>
+    <p class="text-lg md:text-2xl text-gray-700 max-w-3xl mx-auto mb-2 md:mb-3 font-medium">Empowering innovation, collaboration, and creativity across campuses. Organize, participate, and judge hackathons with ease!</p>
+    <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto">Colleges can launch events, students can showcase their brightest ideas, and judges can reward the best minds—all in one seamless, secure, and beautiful platform.</p>
+  </header>
+  <!-- Login & Signup Cards -->
+  <main class="flex-1 flex flex-col items-center justify-start w-full pt-2 md:pt-4">
+    <div class="w-full max-w-6xl px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <!-- College Card -->
+        <div class="bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center border-2 border-blue-200 hover:scale-105 hover:shadow-2xl transition-transform duration-200">
+          <div class="bg-blue-100 rounded-full p-6 mb-5 shadow">
+            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0H6m6 0h6"/></svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-2 text-blue-700">College</h2>
+          <p class="text-gray-600 mb-6 text-center">Create and manage hackathons, set up judges, and review student innovations. Be the hub of campus creativity!</p>
+          <div class="flex gap-3 w-full">
+            <a href="/college/login" class="flex-1 bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-blue-700 transition text-center">Login</a>
+            <a href="/college/signup" class="flex-1 bg-white border border-blue-600 text-blue-700 px-6 py-2 rounded-lg font-semibold shadow hover:bg-blue-50 transition text-center">Sign Up</a>
+          </div>
+        </div>
+        <!-- Student Card -->
+        <div class="bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center border-2 border-green-200 hover:scale-105 hover:shadow-2xl transition-transform duration-200">
+          <div class="bg-green-100 rounded-full p-6 mb-5 shadow">
+            <svg class="w-16 h-16 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-2 text-green-700">Student</h2>
+          <p class="text-gray-600 mb-6 text-center">View and join your college hackathons, submit your ideas, and track your scores. Let your talent shine!</p>
+          <div class="flex gap-3 w-full">
+            <a href="/student/login" class="flex-1 bg-green-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-green-700 transition text-center">Login</a>
+            <a href="/student/signup" class="flex-1 bg-white border border-green-600 text-green-700 px-6 py-2 rounded-lg font-semibold shadow hover:bg-green-50 transition text-center">Sign Up</a>
+          </div>
+        </div>
+        <!-- Judge Card -->
+        <div class="bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center border-2 border-purple-200 hover:scale-105 hover:shadow-2xl transition-transform duration-200">
+          <div class="bg-purple-100 rounded-full p-6 mb-5 shadow">
+            <svg class="w-16 h-16 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 21m5.25-4l.75 4m-7.5-8.5a4.5 4.5 0 119 0v.25a2.25 2.25 0 002.25 2.25h.25a2.25 2.25 0 012.25 2.25v.25a4.5 4.5 0 01-9 0v-.25a2.25 2.25 0 00-2.25-2.25h-.25A2.25 2.25 0 013 13.25v-.25a4.5 4.5 0 019 0z"/></svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-2 text-purple-700">Judge</h2>
+          <p class="text-gray-600 mb-6 text-center">Score student ideas for your assigned college hackathons. Help reward the best and brightest!</p>
+          <a href="/judge/login" class="w-full bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-purple-700 transition text-center">Login</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Info Section Below Cards -->
+  <section class="w-full max-w-4xl mx-auto mt-12 mb-8 px-4">
+    <div class="bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-blue-300">
+      <h3 class="text-2xl font-bold text-blue-700 mb-2">Why Use This Portal?</h3>
+      <p class="text-gray-700 text-center mb-3 max-w-2xl">This platform streamlines the entire hackathon experience for colleges, students, and judges. From event creation to idea submission and fair judging, everything is managed in one place—securely and efficiently.</p>
+      <ul class="text-gray-600 text-center mb-3 max-w-2xl list-disc list-inside">
+        <li>🚀 <span class="font-semibold">Colleges:</span> Launch and manage hackathons, assign judges, and review student innovations.</li>
+        <li>💡 <span class="font-semibold">Students:</span> Discover events, submit your best ideas, and get recognized for your creativity.</li>
+        <li>🏆 <span class="font-semibold">Judges:</span> Score ideas easily and help reward the brightest minds on campus.</li>
+      </ul>
+      <p class="text-blue-600 font-medium">Ready to get started? Choose your role above and join the innovation!</p>
+    </div>
+  </section>
+  <footer class="py-10 text-center text-gray-400 text-base mt-16">
+    &copy; 2024 College Hackathon Portal. Built with Flask & Tailwind CSS.<br>
+    <span class="text-xs">Empowering the next generation of innovators.</span>
+  </footer>
+</body>
+</html> 
