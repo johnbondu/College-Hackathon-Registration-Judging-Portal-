@@ -7,6 +7,7 @@ from pymongo import MongoClient
 import gridfs
 
 # MongoDB Atlas connection
+
 MONGO_URI = "mongodb+srv://john:22F01A0514jOHN@hackathon.qp5qlat.mongodb.net/?retryWrites=true&w=majority&appName=Hackathon"
 client = MongoClient(MONGO_URI)
 db = client["hackathon_portal"]
